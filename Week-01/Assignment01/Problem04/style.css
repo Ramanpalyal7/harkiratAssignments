@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 1200px;
+    height: 250px;
+    margin: 0px auto;
+    border: 2px solid black;
+    display: grid;
+    /* grid-template-rows: 1fr; */
+    grid-template-columns: 1fr 2fr;
+    border-radius: 12px;
+
+}
+.left
+{
+    
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+
+    background-color: rgb(255, 138, 138);
+}
+.right
+
+{
+    background-color: rgb(133, 133, 250);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+
+
+
+
