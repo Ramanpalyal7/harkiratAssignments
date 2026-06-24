@@ -13,14 +13,14 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 80vw;
+    width: 86vw;
     height: 50vh;
     /* border: 2px solid rgb(100, 10, 254); */
     
     
 }
 .left-foot{
-    width: 38%;
+    width: 36%;
     height: 100%;
     /* border: 2px solid black; */
     display: flex;
@@ -34,18 +34,19 @@ footer{
 }
 
 .grid-container{
-    width: 62%;
-    height: 100%;
+    width: 58%;
+    height: 66%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
-    gap: 14px 2em;
+    /* row-gap: 4px;
+    column-gap: 2em; */
   /* border: 2px solid rgb(100, 10, 254); */
 }
 .grid-items{
     /* background-color: aqua; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
     font-size: 16px;
