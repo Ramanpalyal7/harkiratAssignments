@@ -52,9 +52,30 @@ addButton.addEventListener("click",function(){
 
     const newBtn=document.createElement("button");
     newBtn.textContent=inputValue;
+    newBtn.style.background=inputValue;
+    
+    newBtn.classList.add("customBtn");
     buttonCollector.appendChild(newBtn);
-
     inputField.value="";
 
 
 })
+
+//-------------- Event Delgation -----------
+
+    buttonCollector.addEventListener("click",function(event)
+{
+    if(event.target.classList.contains("customBtn"))
+    {
+        const colorName=event.target.textContent.trim();
+        body.style.backgroundColor=colorName;
+
+        
+    }
+   
+})
+
+// -------------  Two features to add in this : after revise and make again
+
+// 1. add color only if it is valid otherwise alert message check perplexity ai CharacterData
+// 2. add color also by click enter key .
