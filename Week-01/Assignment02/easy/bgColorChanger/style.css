@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: monospace;
+
+}
+
+h2{
+    text-align: center;
+    margin-top: 2em;
+
+}
+.buttonCollection{
+    width: 80%;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    margin-top: 24em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+
+
+button{
+    padding: 6px 28px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 4px;
+
+}
+
+button:first-child{
+    background-color: rgb(255, 140, 140);
+}
+
+button:first-child:hover{
+    box-shadow: 0px 0px 8px 5px red;
+}
+button:nth-child(2){
+    background-color: rgb(125, 125, 255);
+}
+
+button:nth-child(2):hover{
+    box-shadow: 0px 0px 8px 5px rgb(18, 200, 213);
+background:linear-gradient(to right,rgb(220, 242, 248) ,rgb(153, 255, 241));
+
+}
+
+
+
+button:nth-child(3){
+    background-color: rgb(133, 241, 133);
+}
+
+button:nth-child(3):hover{
+    box-shadow: 0px 0px 8px 5px green;
+}
+
+
+button:nth-child(4){
+    background-color: rgb(255, 255, 255);
+}
+button:nth-child(4):hover{
+    box-shadow: 0px 0px 8px 5px rgb(218, 225, 185);
+}
+
+
+/*------------------------ Custom button section ----------- */
+.custom{
+    width: 40%;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.custom h3{
+    text-align: center;
+}
+.custom input{
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 6px 18px;
+}
+#createButton{
+    margin-top: 1em;
+    padding: 2px 5px;
+    font-size: 14px;
+    background: none;
+}
+#createButton:hover{
+    
+       box-shadow: 0px 0px 6px 3px grey;
+}
