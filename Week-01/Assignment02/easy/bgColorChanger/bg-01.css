@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+}
+h2{
+    margin-top: 3em;
+    text-align: center;
+}
+.color-Collector{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 22em;
+    flex-wrap: wrap;
+}
+.color-Collector button{
+    padding: 3px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px grey;
+   
+}
+#redBtn{
+    background-color: red;
+}
+#blueBtn{
+    background-color: blue;
+}
+
+
+
+
+
+/* ------------------  Custom  --------- */
+.custom{
+    margin: 3em auto;
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+.custom input{
+    width: 45%;
+    height: 20%;
+   /* font-weight: 200; */
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px rgb(215, 215, 215);
+}
+.custom button{
+    width: 32%;
+  padding: 3px 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px grey;
+}
+button:hover{
+    cursor: pointer;
+}

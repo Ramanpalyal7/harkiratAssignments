@@ -39,6 +39,25 @@ const buttonCollector=document.querySelector(".buttonCollection");
 const inputField= document.querySelector("#inputField");
 const addButton= document.querySelector("#createButton");
 
+function isValidColor(color)
+{
+    const test= document.createElement("div");
+    test.style.color=color;
+
+    if(test.style.color !==" ")
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    // return test.style.color !=="";
+
+
+}
+
+
 
 addButton.addEventListener("click",function(){
 
@@ -49,6 +68,22 @@ addButton.addEventListener("click",function(){
         alert("Please Enter the Button Name");
         return;
     }
+
+    if(isValidColor(inputValue)){
+        //color is correct , continue creating button
+    }
+    else{
+        alert("Wrong color is added !");
+        return;
+    }
+
+
+    //another way to write check the wrong case first
+    // if(!isValidColor(inputValue))
+    // {
+    //     alert("Wrong color is added !");
+    //     return;
+    // }
 
     const newBtn=document.createElement("button");
     newBtn.textContent=inputValue;
@@ -75,7 +110,53 @@ addButton.addEventListener("click",function(){
    
 })
 
-// -------------  Two features to add in this : after revise and make again
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -----  Two features to add in this : after revise and make again
 
 // 1. add color only if it is valid otherwise alert message check perplexity ai CharacterData
 // 2. add color also by click enter key .
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Yes — className replaces the whole class string, 
+// while classList.add() adds a new class without removing 
+// the existing ones.
+
+// box.classList.add("active");
+// box.classList.remove("active");
+// box.classList.toggle("active");
+
+// add() adds a class.
+// remove() removes a class.
+// toggle() adds the class if it’s missing, otherwise removes it.
+
+// In event delegation, you attach one listener to a parent instead 
+// of many listeners to each child. When a child button is clicked,
+//  the click bubbles up to the parent, and inside the function you 
+// check which child was actually clicked using event.target
